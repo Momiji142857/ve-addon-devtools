@@ -1,0 +1,16 @@
+{
+  "name": "ve-addon-devtools",
+  "displayName": "VE Addon: DevTools",
+  "subtitle": "Vanilla Expansion 模组的开发者工具扩展包",
+  "version": "v0.0.1",
+  "author": "VE模组作者: 火星人076 & 128_OTEML\n本模组作者: [sky[]]Momiji142857[white[]]\n其他贡献者请见 GitHub 仓库",
+  "main": "veDevTools.ModLoad",
+  "java": true,
+  "minGameVersion": 160,
+  "dependencies": [
+    "ve"
+  ],
+  "hidden": true,
+  "description": "[#90DBFF[]]Vanilla Expansion原版扩展[white[]]的开发者工具扩展包\ndeveloper tools add-on for the [#90DBFF[]]Vanilla Expansion[white[]] (VE)\n\n[red[]]需先启用 Vanilla Expansion 模组。\nRequires Vanilla Expansion to be enabled.[white[]]\n\n本模组主要收录 VE 战役地图中与剧情相关的世界处理器组及世界处理器蓝图，供社区地图作者与附属模组开发者参考、复用和二次创作。\nThis addon mainly collects world processor groups and world processor schematics related to the VE campaign storyline, providing community map authors and addon developers with references for reuse and further creation.\n\n感谢所有为本模组贡献并参与测试的成员！\nThank you to everyone who contributed and helped test this addon!\n\n[accent[]]最后更新 / Last updated: 2026-11-15[white[]]",
+  "repo": "Momiji142857/ve-addon-devtools"
+}

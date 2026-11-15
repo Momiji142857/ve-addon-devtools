@@ -11,7 +11,7 @@ sourceSets.main{
 // - latest: depend on the latest release of mindustry
 // - be: depend on the very latest commit of mindustry
 // - v<number>: depend on a specific version
-val mindustryVersion = "v160"
+val mindustryVersion = "latest"
 val isWindows = System.getProperty("os.name").lowercase().contains("windows")
 val sdkRoot: String? = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
 val projectName = project.name
@@ -53,6 +53,7 @@ java{
 
 dependencies{
     compileOnly(if(mindustryVersion == "be") "Anuken:MindustryBuilds:latest" else "Anuken:Mindustry:$mindustryVersion")
+    compileOnly(files("libs/annotations-release.jar"))
 }
 
 tasks.jar{
@@ -63,7 +64,7 @@ tasks.jar{
     })
 
     from(projectDir){
-        include("mod.hjson")
+        include("mod.json")
         include("icon.png")
     }
 
